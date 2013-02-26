@@ -14,7 +14,7 @@
 :profiles {:dev {:dependencies [[midje "1.4.0"]
                                                                            [bultitude "0.2.2"]]
                  :plugins [[lein-midje "2.0.1"]]}}                        
-  :ring {:handler {{sanitized-ns}}.server/app}
+  :ring {:handler {{sanitized-ns}}.routes/app}
   :hooks [leiningen.cljsbuild]
   :source-paths ["src/clj"]
   :test-paths ["test/clj"]

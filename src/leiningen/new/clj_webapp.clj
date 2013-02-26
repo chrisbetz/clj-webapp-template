@@ -43,6 +43,9 @@
 
 ;; Clojure
 ["src/clj/{{fs-path}}/server.clj"      (render "src/clj/project_name/server.clj" data)]
+["src/clj/{{fs-path}}/routes.clj"      (render "src/clj/project_name/routes.clj" data)]
+["src/clj/{{fs-path}}/views/common.clj"      (render "src/clj/project_name/views/common.clj" data)]
+["src/clj/{{fs-path}}/views/index.clj"      (render "src/clj/project_name/views/index.clj" data)]
 ;; ClojureScript
 ["src/cljs/{{fs-path}}/client.cljs"      (render "src/cljs/project_name/client.cljs" data)]
 
