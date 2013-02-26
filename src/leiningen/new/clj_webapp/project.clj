@@ -11,11 +11,13 @@
                  ]
   :plugins [[lein-cljsbuild "0.3.0"]
                         [lein-ring "0.8.2"]]
-:profiles {:dev {:dependencies [[midje "1.4.0"]]
+:profiles {:dev {:dependencies [[midje "1.4.0"]
+                                                                           [bultitude "0.2.2"]]
                  :plugins [[lein-midje "2.0.1"]]}}                        
   :ring {:handler {{sanitized-ns}}.server/app}
   :hooks [leiningen.cljsbuild]
   :source-paths ["src/clj"]
+  :test-paths ["test/clj"]
   :cljsbuild { 
     :builds {
       :main {

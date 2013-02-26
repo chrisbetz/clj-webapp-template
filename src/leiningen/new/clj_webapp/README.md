@@ -5,6 +5,7 @@ A website written with Clojure and ClojureScript.
 ## Usage
 
 ```bash
+lein midje
 lein ring server &
 lein lein cljsbuild auto &
 lein trampoline cljsbuild repl-listen
