@@ -8,7 +8,8 @@
   (:gen-class))
 
 (defn init []
-      (log/info "{{name}} is starting with config" (config/read-config (io/resource "config.edn"))))
+  (defonce config (ref (config/read-config (io/resource "config.edn"))))
+  (log/info "{{name}} is starting with config" @config))
 
 (defn destroy []
-      (log/info "{{name}} is shutting down"))
+  (log/info "{{name}} is shutting down"))
