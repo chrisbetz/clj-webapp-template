@@ -5,7 +5,8 @@
 		)
 	(:gen-class))
 
+(defn init []
+  (println "myapp is starting"))
 
-(defn -main [& args]
-	(jetty/run-jetty (routes/app) {:port 3000}))
-
+(defn destroy []
+  (println "myapp is shutting down"))
