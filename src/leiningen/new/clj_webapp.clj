@@ -48,6 +48,13 @@
       ["src/clj/{{fs-path}}/routes.clj" (render "src/clj/project_name/routes.clj" data)]
       ["src/clj/{{fs-path}}/views/common.clj" (render "src/clj/project_name/views/common.clj" data)]
       ["src/clj/{{fs-path}}/views/index.clj" (render "src/clj/project_name/views/index.clj" data)]
+      ["src/clj/{{fs-path}}/config.clj" (render "src/clj/project_name/config.clj" data)]
+
+      ;; Config
+      ["resources/config.edn" (render "resources/config.edn" data)]
+      ["resources/names.edn" (render "resources/names.edn" data)]
+
+
       ;; ClojureScript
       ["src/cljs/{{fs-path}}/client.cljs" (render "src/cljs/project_name/client.cljs" data)]
 
