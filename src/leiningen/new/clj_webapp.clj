@@ -1,6 +1,6 @@
 (ns leiningen.new.clj-webapp
  "A Leiningen template for new web application projects"
-  (:use [leiningen.new.templates :only [->files name-to-path sanitize-ns renderer year]]))
+ (:use [leiningen.new.templates :only [->files name-to-path sanitize-ns renderer year]]))
 
 (def ^{:const true}
   project-version "1.0.0-SNAPSHOT")
@@ -11,15 +11,15 @@
   "A Leiningen template for new web application projects"
   [name & features]
   (let [data {:name name
-               :fs-path (name-to-path name)
-              :sanitized-ns    (sanitize-ns name)
-              :year (year)
-              }]
-    (->files data
-[".gitignore"      (render ".gitignore" data)]
-["README.md"      (render "README.md" data)]
-["project.clj"      (render "project.clj" data)]
-["externs/jquery-1.8.js"      (render "externs/jquery-1.8.js")]
+   :fs-path (name-to-path name)
+   :sanitized-ns    (sanitize-ns name)
+   :year (year)
+   }]
+   (->files data
+    [".gitignore"      (render ".gitignore" data)]
+    ["README.md"      (render "README.md" data)]
+    ["project.clj"      (render "project.clj" data)]
+    ["externs/jquery-1.8.js"      (render "externs/jquery-1.8.js")]
 
 ;; Robots
 ["resources/public/robots.txt"      (render "resources/public/robots.txt" data)]

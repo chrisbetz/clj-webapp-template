@@ -1,10 +1,10 @@
 # clj-webapp
 
-A Leiningen template for FIXME.
+A Leiningen template for creating webapps using Clojure and ClojureScript.
 
 ## Usage
 
-FIXME
+lein new clj-webapp <your-project-name>
 
 ## License
 

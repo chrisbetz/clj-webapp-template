@@ -1,11 +1,11 @@
 (ns {{sanitized-ns}}.routes
   (:use compojure.core
-        [hiccup.middleware :only (wrap-base-url)])
+    [hiccup.middleware :only (wrap-base-url)])
   (:require 
-            [compojure.route :as route]
-            [compojure.handler :as handler]
-            [{{sanitized-ns}}.views.index :as index]
-            ))
+    [compojure.route :as route]
+    [compojure.handler :as handler]
+    [{{sanitized-ns}}.views.index :as index]
+    ))
 
 
 
@@ -16,4 +16,4 @@
 
 (def app
   (-> (handler/site main-routes)
-      (wrap-base-url)))
+    (wrap-base-url)))
