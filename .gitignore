@@ -12,3 +12,4 @@ pom.xml.asc
 .lein-repl-history
 clj-webapp-template.sublime-project
 clj-webapp-template.sublime-workspace
+*.iml

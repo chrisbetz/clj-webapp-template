@@ -1,12 +1,12 @@
 (ns {{sanitized-ns}}.server
-	(:require 
-		[ring.adapter.jetty :as jetty]
-		[{{sanitized-ns}}.routes :as routes]
-		)
-	(:gen-class))
+  (:require [ring.adapter.jetty :as jetty]
+            [{{sanitized-ns}}.routes :as routes]
+            [clojure.tools.logging :as log]
+            )
+  (:gen-class))
 
 (defn init []
-  (println "myapp is starting"))
+      (log/info "{{name}} is starting"))
 
 (defn destroy []
-  (println "myapp is shutting down"))
+      (log/info "{{name}} is shutting down"))

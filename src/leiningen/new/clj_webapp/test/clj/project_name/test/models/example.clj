@@ -1,4 +1,4 @@
-(ns {{sanitized-ns}}.test.models.example
-  (:use midje.sweet))
+(ns {{sanitized-ns}} .test.models.example
+     (:use midje.sweet))
 
-(fact (+ 2 2) => 5)
+     (fact (+ 2 2) => 5)
