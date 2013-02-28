@@ -1,4 +1,4 @@
-(ns {{sanitized-ns}}.views.common
+(ns {{sanitized-ns}}.server.views.common
      (:use [hiccup core page]))
 
 (defn layout [title & content]
@@ -20,7 +20,7 @@
     (include-js "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
     (include-js "/javascripts/foundation.min.js")
     (include-js "/javascripts/app.js")
-    (include-js "/javascripts/{{fs-path}}.js")] "</html>"
+    (include-js "/javascripts/client.js")] "</html>"
    [:script "$(window).load(function(){
 $(\"#featured\").orbit();
 });"]))

@@ -13,3 +13,4 @@ pom.xml.asc
 .lein-plugins
 .lein-repl-history
 /resources/public/javascripts/{{fs-path}}.js
+/crossover-cljs

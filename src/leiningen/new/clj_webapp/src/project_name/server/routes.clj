@@ -1,9 +1,9 @@
-(ns {{sanitized-ns}}.routes
+(ns {{sanitized-ns}}.server.routes
      (:use compojure.core
            [hiccup.middleware :only (wrap-base-url)])
      (:require [compojure.route :as route]
                [compojure.handler :as handler]
-               [{{sanitized-ns}}.views.index :as index]))
+               [{{sanitized-ns}}.server.views.index :as index]))
 
 (defroutes main-routes
  (GET "/" [] (index/index-page))

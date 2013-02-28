@@ -1,4 +1,4 @@
-(ns {{sanitized-ns}}.config
+(ns {{sanitized-ns}}.server.config
   (:require [clojure.java.io :as io]))
 
 ;; This is brought to you by Craig Andera (see https://gist.github.com/candera/4565367)

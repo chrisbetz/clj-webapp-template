@@ -16,7 +16,7 @@ lein ring server &
 
 ### Start ClojureScript compiler to monitor changes to ClojureScript sources
 ```bash
-lein lein cljsbuild auto &
+lein cljsbuild auto dev &
 ```
 
 ### Start Browser-REPL

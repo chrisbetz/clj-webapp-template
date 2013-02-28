@@ -43,21 +43,26 @@
       ["resources/public/stylesheets/app.css" (render "resources/public/stylesheets/app.css")]
       ["resources/public/stylesheets/foundation.min.css" (render "resources/public/stylesheets/foundation.min.css")]
 
-      ;; Clojure
-      ["src/clj/{{fs-path}}/server.clj" (render "src/clj/project_name/server.clj" data)]
-      ["src/clj/{{fs-path}}/routes.clj" (render "src/clj/project_name/routes.clj" data)]
-      ["src/clj/{{fs-path}}/views/common.clj" (render "src/clj/project_name/views/common.clj" data)]
-      ["src/clj/{{fs-path}}/views/index.clj" (render "src/clj/project_name/views/index.clj" data)]
-      ["src/clj/{{fs-path}}/config.clj" (render "src/clj/project_name/config.clj" data)]
+      ;; Server
+      ["src/{{fs-path}}/server/server.clj" (render "src/project_name/server/server.clj" data)]
+      ["src/{{fs-path}}/server/routes.clj" (render "src/project_name/server/routes.clj" data)]
+      ["src/{{fs-path}}/server/views/common.clj" (render "src/project_name/server/views/common.clj" data)]
+      ["src/{{fs-path}}/server/views/index.clj" (render "src/project_name/server/views/index.clj" data)]
+      ["src/{{fs-path}}/server/config.clj" (render "src/project_name/server/config.clj" data)]
+
+      ;; Client
+      ["src/{{fs-path}}/client/main.cljs" (render "src/project_name/client/main.cljs" data)]
+
+      ;; Crossover (both Client and Server)
+      ["src/{{fs-path}}/crossover/common.clj" (render "src/project_name/crossover/common.clj" data)]
 
       ;; Config
       ["resources/config.edn" (render "resources/config.edn" data)]
       ["resources/names.edn" (render "resources/names.edn" data)]
 
 
-      ;; ClojureScript
-      ["src/cljs/{{fs-path}}/client.cljs" (render "src/cljs/project_name/client.cljs" data)]
 
       ;; Midje
-      ["test/clj/{{fs-path}}/test/models/example.clj" (render "test/clj/project_name/test/models/example.clj" data)]
+      ["test/{{fs-path}}/server/test/views/example.clj" (render "test/project_name/server/test/views/example.clj" data)]
+      ["test/{{fs-path}}/crossover/test/models/example.clj" (render "test/project_name/crossover/test/models/example.clj" data)]
       )))

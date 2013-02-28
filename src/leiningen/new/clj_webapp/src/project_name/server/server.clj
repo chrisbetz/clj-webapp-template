@@ -1,9 +1,9 @@
-(ns {{sanitized-ns}}.server
+(ns {{sanitized-ns}}.server.server
   (:require [ring.adapter.jetty :as jetty]
-            [{{sanitized-ns}}.routes :as routes]
+            [{{sanitized-ns}}.server.routes :as routes]
             [clojure.tools.logging :as log]
             [clojure.java.io :as io]
-            [{{sanitized-ns}}.config :as config]
+            [{{sanitized-ns}}.server.config :as config]
               )
   (:gen-class))
 
