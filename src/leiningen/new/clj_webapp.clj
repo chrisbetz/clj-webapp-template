@@ -25,23 +25,14 @@
       ["resources/logback.xml" (render "resources/logback.xml" data)]
       ;; Robots
       ["resources/public/robots.txt" (render "resources/public/robots.txt" data)]
-      ;; Foundation: Images
-      ["resources/public/images/foundation/orbit/bullets.jpg" (render "resources/public/images/foundation/orbit/bullets.jpg")]
-      ["resources/public/images/foundation/orbit/left-arrow-small.png" (render "resources/public/images/foundation/orbit/left-arrow-small.png")]
-      ["resources/public/images/foundation/orbit/left-arrow.png" (render "resources/public/images/foundation/orbit/left-arrow.png")]
-      ["resources/public/images/foundation/orbit/loading.gif" (render "resources/public/images/foundation/orbit/loading.gif")]
-      ["resources/public/images/foundation/orbit/mask-black.png" (render "resources/public/images/foundation/orbit/mask-black.png")]
-      ["resources/public/images/foundation/orbit/pause-black.png" (render "resources/public/images/foundation/orbit/pause-black.png")]
-      ["resources/public/images/foundation/orbit/right-arrow-small.png" (render "resources/public/images/foundation/orbit/right-arrow-small.png")]
-      ["resources/public/images/foundation/orbit/right-arrow.png" (render "resources/public/images/foundation/orbit/right-arrow.png")]
-      ["resources/public/images/foundation/orbit/rotator-black.png" (render "resources/public/images/foundation/orbit/rotator-black.png")]
-      ["resources/public/images/foundation/orbit/timer-black.png" (render "resources/public/images/foundation/orbit/timer-black.png")]
       ;; Foundation: Javascripts
-      ["resources/public/javascripts/app.js" (render "resources/public/javascripts/app.js")]
-      ["resources/public/javascripts/foundation.min.js" (render "resources/public/javascripts/foundation.min.js")]
+      ["resources/public/js/vendor/custom.modernizr.js" (render "resources/public/js/vendor/custom.modernizr.js")]
+      ["resources/public/js/vendor/zepto.js" (render "resources/public/js/vendor/zepto.js")]
+      ["resources/public/js/foundation.min.js" (render "resources/public/js/foundation.min.js")]
       ;; Foundation: Stylesheets
-      ["resources/public/stylesheets/app.css" (render "resources/public/stylesheets/app.css")]
-      ["resources/public/stylesheets/foundation.min.css" (render "resources/public/stylesheets/foundation.min.css")]
+      ["resources/public/css/app.css" (render "resources/public/css/app.css")]
+      ["resources/public/css/normalize.css" (render "resources/public/css/normalize.css")]
+      ["resources/public/css/foundation.min.css" (render "resources/public/css/foundation.min.css")]
 
       ;; Server
       ["src/{{fs-path}}/server/server.clj" (render "src/project_name/server/server.clj" data)]

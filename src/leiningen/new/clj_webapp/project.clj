@@ -33,7 +33,7 @@
                :crossover-path "crossover-cljs"
                :crossover-jar true
                :builds {:main {:source-paths ["src/{{fs-path}}/client"]
-                               :compiler {:output-to "resources/public/javascripts/client.js"
+                               :compiler {:output-to "resources/public/js/app.js"
                                           :externs ["externs/jquery-1.8.js"]
                                           :optimizations :advanced
                                           :pretty-print false}

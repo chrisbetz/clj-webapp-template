@@ -12,5 +12,5 @@ pom.xml.asc
 .lein-failures
 .lein-plugins
 .lein-repl-history
-/resources/public/javascripts/{{fs-path}}.js
+/resources/public/js/app.js
 /crossover-cljs
