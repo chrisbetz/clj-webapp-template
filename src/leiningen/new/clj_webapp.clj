@@ -19,6 +19,7 @@
       [".gitignore" (render ".gitignore" data)]
       ["README.md" (render "README.md" data)]
       ["project.clj" (render "project.clj" data)]
+      ["Procfile" (render "Procfile" data)] ;; this is for heroku support, make it optional?
       ["externs/jquery-1.8.js" (render "externs/jquery-1.8.js")]
 
       ;; logback-config
