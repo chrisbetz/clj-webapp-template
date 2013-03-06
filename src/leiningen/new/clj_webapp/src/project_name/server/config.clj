@@ -73,3 +73,7 @@
 (defmethod invoke-extension 'include
   [origin operation [path]]
   (read-config (path-relative-to (parent origin) path)))
+
+
+(defn init []
+  (defonce config (ref (read-config (io/resource "config.edn")))))

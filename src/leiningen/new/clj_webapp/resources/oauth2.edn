@@ -1,0 +1,3 @@
+{:oauth2 {:github {:client-id "<HERE>"
+                   :client-secret "<HERE>"
+                   :callback {:domain "http://<HERE>" :path "/<AND HERE>"}}}}

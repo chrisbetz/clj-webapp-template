@@ -1,3 +1,3 @@
-(include "names.edn")
+(include "oauth2.edn")
 
 {:cities ["Hamburg" "Berlin" "Munich"]}

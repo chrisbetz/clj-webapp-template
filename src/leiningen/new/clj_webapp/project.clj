@@ -10,6 +10,8 @@
                   [lib-noir "0.4.2"]
                   [jayq "2.1.0"]
                   [crate "0.2.4"]
+                  [com.cemerick/friend "0.1.3"]
+                  [friend-oauth2 "0.0.2"]
                   [ch.qos.logback/logback-classic "1.0.9"]]
    :plugins [[lein-cljsbuild "0.3.0"]
              [lein-ring "0.8.2"]]

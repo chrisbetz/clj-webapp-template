@@ -40,6 +40,7 @@
       ["src/{{fs-path}}/server/routes.clj" (render "src/project_name/server/routes.clj" data)]
       ["src/{{fs-path}}/server/views/common.clj" (render "src/project_name/server/views/common.clj" data)]
       ["src/{{fs-path}}/server/views/index.clj" (render "src/project_name/server/views/index.clj" data)]
+      ["src/{{fs-path}}/server/views/welcome.clj" (render "src/project_name/server/views/welcome.clj" data)]
       ["src/{{fs-path}}/server/config.clj" (render "src/project_name/server/config.clj" data)]
 
       ;; Client
@@ -50,11 +51,12 @@
 
       ;; Config
       ["resources/config.edn" (render "resources/config.edn" data)]
-      ["resources/names.edn" (render "resources/names.edn" data)]
-
+      ["resources/oauth2.edn" (render "resources/oauth2.edn" data)] ;; this is for OAuth-Support
 
 
       ;; Midje
       ["test/{{fs-path}}/server/test/views/example.clj" (render "test/project_name/server/test/views/example.clj" data)]
       ["test/{{fs-path}}/crossover/test/models/example.clj" (render "test/project_name/crossover/test/models/example.clj" data)]
-      )))
+      )
+    (println "Congratulations, you created your clj-webapp-project " (:name data) ".\nDon't forget to update resouces/oauth2.edn with your client-id, client-secret, and your callback-url.\n")
+    ))
