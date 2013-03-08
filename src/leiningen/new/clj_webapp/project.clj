@@ -16,6 +16,7 @@
                   [friend-oauth2 "0.0.2"]
                   [clj-http "0.6.4" :exclusions [commons-logging]]
                   [cheshire "5.0.2"]
+                  [org.clojure/core.memoize "0.5.2"]
                   ;; /OAuth2.0 Support
 
                   [ch.qos.logback/logback-classic "1.0.9"]]
