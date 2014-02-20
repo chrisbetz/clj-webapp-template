@@ -1,4 +1,4 @@
-(defproject clj-webapp/lein-template "0.1.0-SNAPSHOT"
+(defproject clj-webapp/lein-template "0.1.0"
   :description "A template for webapps using Clojure and Clojurescript"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
