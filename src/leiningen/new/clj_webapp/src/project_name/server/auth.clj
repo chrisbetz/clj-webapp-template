@@ -2,6 +2,7 @@
      (:require [clojure.tools.logging :as log]
                [cemerick.friend :as friend]
                [friend-oauth2.workflow :as oauth2]
+               [friend-oauth2.util :as oauth2util]
                [cheshire.core :as j]
                [{{sanitized-ns}}.server.config :as config]))
 
@@ -22,28 +23,28 @@
  {:authentication-uri {:url "https://github.com/login/oauth/authorize"
                        :query {:client_id (:client-id client-config)
                                :response_type "code"
-                               :redirect_uri (oauth2/format-config-uri client-config)
+                               :redirect_uri (oauth2util/format-config-uri client-config)
                                :scope "user"}}
 
   :access-token-uri {:url "https://github.com/login/oauth/access_token"
                      :query {:client_id (:client-id client-config)
                              :client_secret (:client-secret client-config)
                              :grant_type "authorization_code"
-                             :redirect_uri (oauth2/format-config-uri client-config)
+                             :redirect_uri (oauth2util/format-config-uri client-config)
                              :code ""}}})
 
 (defn google-uri-config [client-config]
   {:authentication-uri {:url "https://accounts.google.com/o/oauth2/auth"
                         :query {:response_type "code"
                                 :client_id (:client-id client-config)
-                                :redirect_uri (oauth2/format-config-uri client-config)
+                                :redirect_uri (oauth2util/format-config-uri client-config)
                                 :scope "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"}}
 
    :access-token-uri {:url "https://accounts.google.com/o/oauth2/token"
                       :query {:client_id (:client-id client-config)
                               :client_secret (:client-secret client-config)
                               :grant_type "authorization_code"
-                              :redirect_uri (oauth2/format-config-uri client-config)
+                              :redirect_uri (oauth2util/format-config-uri client-config)
                               :code ""}}})
 
 (defn workflows []
