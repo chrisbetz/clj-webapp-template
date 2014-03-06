@@ -39,6 +39,7 @@
       ["src/{{fs-path}}/server/server.clj" (render "src/project_name/server/server.clj" data)]
       ["src/{{fs-path}}/server/routes.clj" (render "src/project_name/server/routes.clj" data)]
       ["src/{{fs-path}}/server/auth.clj" (render "src/project_name/server/auth.clj" data)]
+      ["src/{{fs-path}}/server/users/users.clj" (render "src/project_name/server/users/users.clj" data)]
       ["src/{{fs-path}}/server/views/common.clj" (render "src/project_name/server/views/common.clj" data)]
       ["src/{{fs-path}}/server/views/index.clj" (render "src/project_name/server/views/index.clj" data)]
       ["src/{{fs-path}}/server/views/welcome.clj" (render "src/project_name/server/views/welcome.clj" data)]

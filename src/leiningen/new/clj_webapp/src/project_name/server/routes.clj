@@ -10,6 +10,7 @@
      [cemerick.friend :as friend]
      [friend-oauth2.workflow :as oauth2]
      [cheshire.core :as j]
+     [noir.util.middleware]
      [{{sanitized-ns}}.server.config :as config]
      [{{sanitized-ns}}.server.auth :as auth]
      [{{sanitized-ns}}.server.views.index :as index]
@@ -33,3 +34,4 @@
                           :login-uri "/"
                           :workflows (auth/workflows)}))
        (wrap-base-url))))
+
